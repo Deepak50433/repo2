@@ -1,0 +1,16 @@
+﻿@model Cart_Example.Models.Product
+
+
+
+<table>
+    <tr>
+        <td>
+            @Html.HiddenFor(e=>e.id)@Html.HiddenFor(e=>e.categid)
+            @Html.DisplayFor(e=>e.name)
+        </td>
+
+
+
+        <td>@Html.CheckBoxFor(e=>e.check)</td>
+    </tr>
+</table>

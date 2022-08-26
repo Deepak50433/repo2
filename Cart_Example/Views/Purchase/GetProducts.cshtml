@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Cart_Example.Models.Product>
+
+@{
+    ViewData["Title"] = "GetProducts";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" class="btn btn-primay" value="Submit" />
+}
